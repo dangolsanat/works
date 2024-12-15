@@ -35,12 +35,12 @@ const projects = [
         id: 3,
         title: "NYPD Fence Project by Borinquen Gallo",
         description: "Art installation for Borinquen Gallo",
-        images: ["js/images/Project3-1.jpeg",
+        images: ["js/images/Project3-1.jpg",
                 "js/images/Project3-2.jpg",
-                "js/images/Project3-3.jpeg",
-                "js/images/Project3-4.jpeg",
-                "js/images/Project3-5.jpeg",
-                "js/images/Project3-6.jpeg",
+                "js/images/Project3-3.jpg",
+                "js/images/Project3-4.jpg",
+                "js/images/Project3-5.jpg",
+                "js/images/Project3-6.jpg",
 
             ]
     }
@@ -135,7 +135,7 @@ const projects = [
     if (downloadButton) {
         downloadButton.addEventListener('click', () => {
             const link = document.createElement('a');
-            link.href = '/your-repo-name/js/images/resume.pdf';
+            link.href = '/portfolio/js/images/resume.pdf';
             link.download = 'resume.pdf';
             link.click();
         });

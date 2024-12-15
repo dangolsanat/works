@@ -130,13 +130,13 @@ body.dark .works-header {
     padding: 2rem;
     padding-top: 5rem;
     min-height: 100vh;
-    line-height: 1.5;
     max-width: 102rem;
 
 }
 
-.content p{
+.introParagraph{
     width: 50rem;
+    line-height: 1.5;
 
 }
 

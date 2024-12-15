@@ -33,12 +33,12 @@ const projects = [
         id: 3,
         title: "NYPD Fence Project by Borinquen Gallo",
         description: "Art installation for Borinquen Gallo",
-        images: ["js/images/project 3-1.jpg",
-                "js/images/project 3-2.jpg",
-                "js/images/project 3-3.jpg",
-                "js/images/project 3-4.jpg",
-                "js/images/project 3-5.jpg",
-                "js/images/project 3-6.jpg",
+        images: ["js/images/project3-1.jpeg",
+                "js/images/project3-2.jpg",
+                "js/images/project3-3.jpeg",
+                "js/images/project3-4.jpeg",
+                "js/images/project3-5.jpeg",
+                "js/images/project3-6.jpeg",
 
             ]
     }

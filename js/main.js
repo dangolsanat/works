@@ -7,9 +7,9 @@ const projects = [
     },
     {
         id: 2,
-        title: "Urban Planning",
-        description: "City center revitalization project",
-        images: ["js/images/project1-1.jpg", "js/images/project1-2.jpg"]
+        title: "550 Madison Ave, NY ",
+        description: "550 Madison Ave, NY",
+        images: ["js/images/project2-1.jpg", "js/images/project2-1.jpg"]
     },
     {
         id: 3,

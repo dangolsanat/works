@@ -14,6 +14,8 @@ const projects = [
                 "js/images/project1-9.jpg",
                 "js/images/project1-10.jpg",
                 "js/images/project1-11.jpg",
+                "js/images/project1-12.jpg"
+
 
         ]
     },

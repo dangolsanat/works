@@ -107,6 +107,8 @@ body.dark .menu-link:hover {
     align-items: center;
     cursor: pointer;
     color: var(--menu-light);
+    transform: none !important; /* Remove animation */
+
 }
 
 body.dark .works-header {
@@ -240,5 +242,13 @@ body.dark .cursor-square {
 }
 
 body.dark .works-header:hover {
+    color: var(--active-dark);
+}
+
+.works-submenu .menu-link.active {
+    color: var(--active-light);
+}
+
+body.dark .works-submenu .menu-link.active {
     color: var(--active-dark);
 }

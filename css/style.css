@@ -128,7 +128,16 @@ body.dark .works-header {
 #main-content {
     margin-left: 240px;
     padding: 2rem;
+    padding-top: 5rem;
     min-height: 100vh;
+    line-height: 1.5;
+    max-width: 102rem;
+
+}
+
+#main-content   p{
+    width: 50rem;
+
 }
 
 .section {

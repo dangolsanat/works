@@ -3,31 +3,44 @@ const projects = [
         id: 1,
         title: "23-81 31st St, Astoria",
         description: "12 stories Mixed-Used Building in Astoria, Queens",
-        images: ["js/images/project1-1.jpg", "js/images/project1-2.jpg", "js/images/project1-3.jpg", "js/images/project1-4.jpg", "js/images/project1-5.jpg", "js/images/project1-6.jpg"]
+        images: ["js/images/project1-1.jpg", 
+                "js/images/project1-2.jpg", 
+                "js/images/project1-3.jpg", 
+                "js/images/project1-4.jpg", 
+                "js/images/project1-5.jpg", 
+                "js/images/project1-6.jpg",
+                "js/images/project1-7.jpg",
+                "js/images/project1-8.jpg",
+                "js/images/project1-9.jpg",
+                "js/images/project1-10.jpg",
+                "js/images/project1-11.jpg",
+
+        ]
     },
     {
         id: 2,
         title: "550 Madison Ave, NY ",
         description: "550 Madison Ave, NY",
-        images: ["js/images/project2-1.jpg", "js/images/project2-1.jpg"]
+        images: ["js/images/project2-1.jpg", 
+                 "js/images/project2-2.jpg",
+                 "js/images/project2-3.jpg",
+                 "js/images/project2-4.jpg",
+                 "js/images/project2-5.jpg",
+
+        ]
     },
     {
         id: 3,
-        title: "Commercial Space",
-        description: "Mixed-use retail and office development",
-        images: ["js/images/project1-1.jpg", "js/images/project1-2.jpg"]
-    },
-    {
-        id: 4,
-        title: "Cultural Center",
-        description: "Community arts and events venue",
-        images: ["js/images/project1-1.jpg", "js/images/project1-2.jpg"]
-    },
-    {
-        id: 5,
-        title: "Green Building",
-        description: "Eco-friendly office building with LEED certification",
-        images: ["js/images/project1-1.jpg", "js/images/project1-2.jpg"]
+        title: "NYPD Fence Project by Borinquen Gallo",
+        description: "Art installation for Borinquen Gallo",
+        images: ["js/images/project 3-1.jpg",
+                "js/images/project 3-2.jpg",
+                "js/images/project 3-3.jpg",
+                "js/images/project 3-4.jpg",
+                "js/images/project 3-5.jpg",
+                "js/images/project 3-6.jpg",
+
+            ]
     }
 ];
 

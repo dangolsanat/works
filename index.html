@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.cdnfonts.com/css/aptos" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle">
+        <svg id="sun-icon" class="icon" viewBox="0 0 24 24" style="display: none;">
+            <!-- Sun SVG path -->
+            <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+        <svg id="moon-icon" class="icon" viewBox="0 0 24 24">
+            <!-- Moon SVG path -->
+            <path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+    </button>
+
+    <!-- Left Menu -->
+    <nav class="side-menu">
+        <div class="menu-items">
+            <a href="#" class="menu-link active" data-section="home">Home</a>
+            <div class="works-menu">
+                <div class="works-header">
+                    <span>Sample Works</span>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="works-submenu hidden">
+                    <!-- Projects will be inserted here by JavaScript -->
+                </div>
+            </div>
+            <a href="#" class="menu-link" data-section="resume">Resume</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="content">
+                <h1>Hey, I'm Sanat 🙏</h1>
+                <p>Hello! I'm a passionate designer focused on creating meaningful and innovative solutions.
+                   With a keen eye for detail and a love for creative problem-solving, I strive to push the
+                   boundaries of conventional design thinking.</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="project" class="section">
+            <div id="project-content"></div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section">
+            <div class="content">
+                <h2>Resume</h2>
+                <div class="resume-container">
+                    <img src="/images/resume.jpg" alt="Resume" class="resume-image">
+                    <button class="download-button">Download PDF</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Crosshair Cursor -->
+    <div id="cursor" class="cursor">
+        <div class="cursor-line vertical"></div>
+        <div class="cursor-line horizontal"></div>
+        <div class="cursor-square"></div>
+    </div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

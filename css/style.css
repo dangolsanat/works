@@ -1,0 +1,244 @@
+:root {
+    --bg-light: #E2D4BB;
+    --text-light: #0F1931;
+    --menu-light: #594435;
+    --active-light: #2D4159;
+    
+    --bg-dark: #0F1931;
+    --text-dark: #E2D4BB;
+    --menu-dark: #2D4159;
+    --active-dark: #C89768;
+
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none !important;
+    font-family: 'Aptos', sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    min-height: 100vh;
+    transition: var(--transition);
+}
+
+body.dark {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 40;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 2rem;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition);
+}
+
+.menu-items {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu-link {
+    color: var(--menu-light);
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition: var(--transition);
+}
+
+body.dark .menu-link {
+    color: var(--menu-dark);
+}
+
+.menu-link.active,
+.menu-link:hover {
+    color: var(--active-light);
+}
+
+body.dark .menu-link.active,
+body.dark .menu-link:hover {
+    color: var(--active-dark);
+}
+
+.works-menu {
+    margin: 1rem 0;
+}
+
+.works-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: var(--menu-light);
+}
+
+body.dark .works-header {
+    color: var(--menu-dark);
+}
+
+.works-submenu {
+    margin-left: 1rem;
+    display: none;
+}
+
+.works-submenu.visible {
+    display: block;
+}
+
+/* Main Content */
+#main-content {
+    margin-left: 240px;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.section {
+    display: none;
+    padding: 2rem;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Project Images */
+.project-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+/* Resume Section */
+.resume-container {
+    max-width: 800px;
+    margin: 2rem 0;
+}
+
+.resume-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.download-button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--active-light);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+body.dark .download-button {
+    background-color: var(--active-dark);
+}
+
+/* Cursor */
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cursor.visible {
+    opacity: 1;
+}
+
+.cursor-line {
+    position: fixed;
+    background-color: var(--text-light);
+    opacity: 0.75;
+}
+
+body.dark .cursor-line {
+    background-color: var(--text-dark);
+}
+
+.cursor-line.vertical {
+    width: 1px;
+    height: 9999px;
+    top: -5000px;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.cursor-line.horizontal {
+    height: 1px;
+    width: 9999px;
+    left: -5000px;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.cursor-square {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--text-light);
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%, -50%);
+}
+
+body.dark .cursor-square {
+    border-color: var(--text-dark);
+}
+
+
+.works-submenu .menu-link {
+    display: block;
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+}
+
+.works-header:hover {
+    color: var(--active-light);
+}
+
+body.dark .works-header:hover {
+    color: var(--active-dark);
+}
